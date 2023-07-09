@@ -1,32 +1,32 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+} 
+
+/* :root {
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 400; */
 
   /* max-width: 1280px; */
 
   /* text-align: center; */
 
   /* color-scheme: light dark; */
-  color: rgba(0, 0, 0, 0.945);
+  /* color: rgba(0, 0, 0, 0.945); */
   /* background-color: #242424; */
-
+/* 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
+} */
 
 /*
 :root {

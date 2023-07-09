@@ -22,7 +22,7 @@ const Navbar = () => {
           <button className="button">Sign Up</button>
         </div>
       </div>
-      <hr />
+      <hr className="hr" />
       <div className="menu">
         <span>1</span>
         <span>2</span>
