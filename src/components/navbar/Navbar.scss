@@ -22,8 +22,7 @@
     .logo {
       font-size: 34px;
       font-weight: bold;
-      .text {
-      }
+
       .dot {
         color: #0a250a;
       }
@@ -61,7 +60,8 @@
           flex-direction: column;
           gap: 10px;
           color: grey;
-          width: 200px;font-weight: 300;
+          width: 200px;
+          font-weight: 300;
         }
       }
 
