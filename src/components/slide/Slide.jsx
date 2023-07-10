@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import Slider from "infinite-react-carousel";
+import "./Slide.scss";
+// import { CatCard } from "../index";
+// import { cards } from "../../data";
 
-const Slide = () => {
+const Slide = ({children, slidesToShow, arrowsScroll}) => {
   return (
-    <div>Slide</div>
-  )
-}
+    <div className="slide">
+      <div className="container">
+        <Slider slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>
+          {children}
+        </Slider>
+      </div>
+    </div>
+  );
+};
 
-export default Slide
+export default Slide;
