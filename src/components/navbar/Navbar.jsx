@@ -1,36 +1,75 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.scss";
+import { ReactIcon } from "../../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const isActive = () => {
+    window.scrollY > 0 ? setActive(true) : setActive(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", isActive);
+    return () => {
+      window.removeEventListener("scroll", isActive);
+    };
+  }, []);
+
+  const currentUser = {
+    id: 1,
+    username: "john doe",
+    isSeller: true,
+  };
 
   return (
     <div className={active ? "navbar active" : "navbar"}>
       <div className="container">
         <div className="logo">
-          {/* <Link to="/"> */}
+          {/* <Link to='/'> */}
           <span className="text">minimart</span>
           {/* </Link> */}
           <span className="dot">.</span>
         </div>
         <div className="links">
-          <span className="">Business</span>
-          <span className="">Explore</span>
-          <span className="">English</span>
-          <span className="">Become a Seller</span>
-          <span className="">Sign In</span>
-          <button className="button">Sign Up</button>
+          <span>Business</span>
+          <span>Explore</span>
+          <span>English</span>
+          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          <span>Sign In</span>
+          {!currentUser && <button>Join</button>}
+          {currentUser && (
+            <div className="user" onClick={() => setOpen(!open)}>
+              <img src={ReactIcon} alt="" />
+              <span>{currentUser?.username}</span>
+              {open && <div className="options">
+                {currentUser?.isSeller && (
+                  <>
+                    <span>Gigs</span>
+                    <span>Add New Gig</span>
+                  </>
+                )}
+                <span>Orders</span>
+                <span>Messages</span>
+                <span>Logout</span>
+              </div>}
+            </div>
+          )}
         </div>
       </div>
-      <hr className="hr" />
-      <div className="menu">
-        <span>1</span>
-        <span>2</span>
-        <span>1</span>
-        <span>2</span>
-        <span>1</span>
-        <span>2</span>
-      </div>
+      {active && (
+        <>
+          <hr />
+          <div className="menu">
+            <span>Business</span>
+            <span>Explore</span>
+            <span>English</span>
+            <span>Become a Seller</span>
+            <span>Sign In</span>
+          </div>
+        </>
+      )}
     </div>
   );
 };
