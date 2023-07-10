@@ -2,7 +2,9 @@ import React from 'react'
 
 const Slide = () => {
   return (
-    <div>Slide</div>
+    <div className='slide'>
+      <div className="container"></div>
+    </div>
   )
 }
 
