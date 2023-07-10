@@ -74,3 +74,48 @@ export const cards = [
     img: ReactIcon,
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    img: ReactIcon,
+    pp: "lorem ipsum",
+    cat: "AI Artists",
+    username: "jane doe",
+  },
+  {
+    id: 1,
+    img: ReactIcon,
+    pp: "lorem ipsum",
+    cat: "AI Artists",
+    username: "jane doe",
+  },
+  {
+    id: 1,
+    img: ReactIcon,
+    pp: "lorem ipsum",
+    cat: "AI Artists",
+    username: "jane doe",
+  },
+  {
+    id: 1,
+    img: ReactIcon,
+    pp: "lorem ipsum",
+    cat: "AI Artists",
+    username: "jane doe",
+  },
+  {
+    id: 1,
+    img: ReactIcon,
+    pp: "lorem ipsum",
+    cat: "AI Artists",
+    username: "jane doe",
+  },
+  {
+    id: 1,
+    img: ReactIcon,
+    pp: "lorem ipsum",
+    cat: "AI Artists",
+    username: "jane doe",
+  },
+];
