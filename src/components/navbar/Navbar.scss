@@ -35,6 +35,36 @@
       font-weight: 500;
       font-family: sans-serif;
 
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 10px;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          color: grey;
+          width: 200px;font-weight: 300;
+        }
+      }
+
       button {
         color: #fff;
         padding: 10px 20px;
