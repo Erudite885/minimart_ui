@@ -9,11 +9,11 @@ const Home = () => {
     <div className="home">
       <Featured />
       <TrustedBy />
-      {/* <Slide slidesToShow={5} arrowsScroll={5}>
+      <Slide slidesToShow={5} arrowsScroll={5}>
         {cards.map((card) => (
           <CatCard item={card} key={card.id} />
         ))}
-      </Slide> */}
+      </Slide>
       {/* <div className="features">
         <div className="container">
           <div className="item">
