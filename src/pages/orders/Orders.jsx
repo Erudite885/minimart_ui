@@ -6,7 +6,7 @@ import { ReactIcon } from "../../assets";
 const Orders = () => {
   const currentUser = {
     id: 1,
-    username: "John Doe",
+    username: 'John Doe',
     isSeller: true,
   };
 
