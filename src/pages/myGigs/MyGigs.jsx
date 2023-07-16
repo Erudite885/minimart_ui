@@ -15,79 +15,81 @@ const MyGigs = () => {
           </Link>
         </div>
         <table>
-          <tr>
-            <th>Image</th>
-            <th>Title</th>
-            <th>Price</th>
-            <th>Sales</th>
-            <th>Action</th>
-          </tr>
-          <tr>
-            <td>
-              <img src={ReactIcon} alt="" className="img" />
-            </td>
-            <td>Gig1</td>
-            <td>88</td>
-            <td>123</td>
-            <td>
-              <img src={ReactIcon} alt="" className="delete" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src={ReactIcon} alt="" className="img" />
-            </td>
-            <td>Gig1</td>
-            <td>88</td>
-            <td>123</td>
-            <td>
-              <img src={ReactIcon} alt="" className="delete" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src={ReactIcon} alt="" className="img" />
-            </td>
-            <td>Gig1</td>
-            <td>88</td>
-            <td>123</td>
-            <td>
-              <img src={ReactIcon} alt="" className="delete" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src={ReactIcon} alt="" className="img" />
-            </td>
-            <td>Gig1</td>
-            <td>88</td>
-            <td>123</td>
-            <td>
-              <img src={ReactIcon} alt="" className="delete" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src={ReactIcon} alt="" className="img" />
-            </td>
-            <td>Gig1</td>
-            <td>88</td>
-            <td>123</td>
-            <td>
-              <img src={ReactIcon} alt="" className="delete" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src={ReactIcon} alt="" className="img" />
-            </td>
-            <td>Gig1</td>
-            <td>88</td>
-            <td>123</td>
-            <td>
-              <img src={ReactIcon} alt="" className="delete" />
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Sales</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>
+                <img src={ReactIcon} alt="" className="img" />
+              </td>
+              <td>Gig1</td>
+              <td>88</td>
+              <td>123</td>
+              <td>
+                <img src={ReactIcon} alt="" className="delete" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src={ReactIcon} alt="" className="img" />
+              </td>
+              <td>Gig1</td>
+              <td>88</td>
+              <td>123</td>
+              <td>
+                <img src={ReactIcon} alt="" className="delete" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src={ReactIcon} alt="" className="img" />
+              </td>
+              <td>Gig1</td>
+              <td>88</td>
+              <td>123</td>
+              <td>
+                <img src={ReactIcon} alt="" className="delete" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src={ReactIcon} alt="" className="img" />
+              </td>
+              <td>Gig1</td>
+              <td>88</td>
+              <td>123</td>
+              <td>
+                <img src={ReactIcon} alt="" className="delete" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src={ReactIcon} alt="" className="img" />
+              </td>
+              <td>Gig1</td>
+              <td>88</td>
+              <td>123</td>
+              <td>
+                <img src={ReactIcon} alt="" className="delete" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src={ReactIcon} alt="" className="img" />
+              </td>
+              <td>Gig1</td>
+              <td>88</td>
+              <td>123</td>
+              <td>
+                <img src={ReactIcon} alt="" className="delete" />
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
